@@ -1,3 +1,8 @@
+# Piyush Portfolio
+
+I created a responsive portfolio website using React.js with Vite for a fast and modern frontend, and Node.js for backend functionality like contact form handling. It showcases my projects and skills with a clean UI, smooth navigation, and mobile-friendly design, providing a professional online presence.
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
