@@ -41,7 +41,9 @@ body {
 }
 
 .App {
-
+  /* display: flex;
+  flex-direction: column;
+  gap: 16px;  */
 }
 
 .logo {
@@ -239,10 +241,18 @@ section {
 
 /* Hero Section */
 .hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  background: linear-gradient(135deg, rgba(108, 99, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+  padding-top: 140px;
+  /* background: linear-gradient(135deg, rgba(108, 99, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%); */
+  background: linear-gradient(180deg, rgba(108, 99, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+
+}
+
+@media (min-width: 769px) {
+  .hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .hero .container {
