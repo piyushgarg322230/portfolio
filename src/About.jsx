@@ -27,7 +27,7 @@ const About = () => {
         <h2 className="section-title">About <span className="highlight">Me</span></h2>
         <div className="about-content">
         <div className="about-image" ref={aboutRef}>
-            <img src="https://picsum.photos/id/237/200/300" alt="About" className="about-img" />
+            <img src="./image3.png" alt="About" className="about-img" />
           </div>
           <div className="about-text">
             <p>{userData.About.description}</p>

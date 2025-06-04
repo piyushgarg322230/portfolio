@@ -42,9 +42,9 @@ const Navbar = ({ theme, toggleTheme }) => {
         <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
           <li><a href="#home" onClick={(e) => { e.preventDefault(); handleLinkClick('home'); }}>Home</a></li>
           <li><a href="#about" onClick={(e) => { e.preventDefault(); handleLinkClick('about'); }}>About</a></li>
-          <li><a href="#education" onClick={(e) => { e.preventDefault(); handleLinkClick('education'); }}>Education</a></li>
+          <li><a href="#experience" onClick={(e) => { e.preventDefault(); handleLinkClick('experience'); }}>Experience</a></li>
           <li><a href="#projects" onClick={(e) => { e.preventDefault(); handleLinkClick('projects'); }}>Projects</a></li>
-          <li><a href="#contact" onClick={(e) => { e.preventDefault(); handleLinkClick('contact'); }}>Exprience</a></li>
+          <li><a href="#education" onClick={(e) => { e.preventDefault(); handleLinkClick('education'); }}>Education</a></li>
           <li><a href="#contact" onClick={(e) => { e.preventDefault(); handleLinkClick('contact'); }}>Contact</a></li>
           {/* <li className="theme-toggle" onClick={toggleTheme}>
             {theme === 'dark' ? <FaSun /> : <FaMoon />}

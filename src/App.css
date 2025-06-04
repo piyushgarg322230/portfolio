@@ -11,6 +11,8 @@
   --black: #000000;
   --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --transition: all 0.3s ease;
+  --border-radius: 8px;
+  --accent: #4d44db;
 }
 
 [data-theme="dark"] {
@@ -263,17 +265,17 @@ section {
 
 .hero-content {
   flex: 1;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .hero-title {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   margin-bottom: 15px;
   line-height: 1.2;
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 400;
   margin-bottom: 20px;
   color: var(--gray-color);
@@ -388,6 +390,62 @@ section {
   gap: 30px;
 }
 
+.project-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.filter-btn {
+  padding: 0.5rem 1.5rem;
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.section-footer {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.8rem;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  text-align: center;
+  border: none;
+  font-size: 1rem;
+  text-decoration: none; /* ✅ Fix is here */
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+}
+
+.btn-outline:hover {
+    background-color: var(--accent);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+}
 .project-card {
   background-color: var(--white);
   border-radius: 10px;

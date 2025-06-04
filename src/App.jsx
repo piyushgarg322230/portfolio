@@ -7,6 +7,7 @@ import Contact from './Contact';
 import Footer from './Footer';
 import Education from './Education'
 import './App.css';
+import Exprience from './Exprience';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -20,8 +21,9 @@ function App() {
       <Navbar theme={theme} toggleTheme={() => setTheme(prev => prev === 'light' ? 'dark' : 'light')} />
       <Hero />
       <About />
-      <Education />
+      <Exprience />
       <Projects />
+      <Education />
       <Contact />
       <Footer />
     </div>

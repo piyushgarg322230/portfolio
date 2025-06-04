@@ -3,6 +3,8 @@ import { userData } from './userData';
 
 
 const Hero = () => {
+
+  
   return (
     <section id="home" className="hero">
       <div className="container">
@@ -12,13 +14,13 @@ const Hero = () => {
           <p className="hero-description">{userData.Home.description}</p>
           <div className="hero-buttons">
             <a href="#projects" className="btn btn-primary">View My Work</a>
-            <a href="#contact" className="btn btn-secondary">Contact Me</a>
+            <a href="#contact" className="btn btn-secondary">Download My Resume</a>
           </div>
         </div>
-        <div className="hero-image">
+        {/* <div className="hero-image">
           <img src="./image2.png" alt="Profile" className="profile-img" />
           <div className="circle-animation"></div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

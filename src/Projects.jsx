@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const projects = [
@@ -30,6 +30,7 @@ const projects = [
 
 const Projects = () => {
   const projectRefs = useRef([]);
+  const [activeFilter, setActiveFilter] = useState('all');
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -57,6 +58,20 @@ const Projects = () => {
     <section id="projects" className="projects">
       <div className="container">
         <h2 className="section-title">My <span className="highlight">Projects</span></h2>
+
+        {/* <div className="project-filters">
+          {['all', 'company', 'self'].map(filter => (
+            <button
+              key={filter}
+              className={`filter-btn ${activeFilter === filter ? 'active' : ''}`}
+              onClick={() => setActiveFilter(filter)}
+            >
+              {filter.charAt(0).toUpperCase() + filter.slice(1)}
+            </button>
+          ))}
+        </div> */}
+
+
         <div className="projects-grid">
           {projects.map((project, index) => (
             <div 
@@ -82,6 +97,12 @@ const Projects = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="section-footer">
+          <a href="#" className="btn-outline">
+          <FaGithub style={{ marginRight: "8px" }} /> View All Projects
+          </a>
         </div>
       </div>
     </section>
