@@ -578,6 +578,17 @@ section {
   font-size: 1rem;
 }
 
+
+
+.contact-item span {
+  /* clamp(MIN, PREFERRED, MAX)
+    - Font won't go below 1rem (16px).
+    - It will try to be 2.5% of the viewport width (vw).
+    - It won't go above 1.2rem (19.2px).
+  */
+  font-size: clamp(0.8rem, 2.5vw, 1.2rem); 
+}
+
 .social-links {
   display: flex;
   margin-top: 30px;

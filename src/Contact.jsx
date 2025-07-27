@@ -2,6 +2,9 @@ import React from 'react';
 import { useRef } from 'react';
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 import { userData } from './userData';
+import emailjs from "emailjs-com";
+import { toast } from "react-hot-toast";
+
 
 const Contact = () => {
   // const handleSubmit = (e) => {
@@ -17,22 +20,33 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-        publicKey: 'YOUR_PUBLIC_KEY',
-      })
+      .sendForm(
+        userData.contactUs.YOUR_SERVICE_ID,
+        userData.contactUs.YOUR_TEMPLATE_ID,
+        form.current,
+        userData.contactUs.YOUR_PUBLIC_KEY
+      )
       .then(
         () => {
-          console.log('SUCCESS!');
+          console.log("SUCCESS!");
+          toast.success("Message sent successfully!", {
+            position: "top-right",
+            duration: 3000,
+          });
+          form.current.reset();
         },
         (error) => {
-          console.log('FAILED...', error.text);
-        },
+          console.log("FAILED...", error.text);
+          toast.success("Failed to send. Try again later!", {
+            position: "top-right",
+            duration: 3000,
+          });
+        }
       );
-
-    e.target.reset();
   };
 
   return (
+    
     <section id="contact" className="contact">
       <div className="container">
         <h2 className="section-title">Get In <span className="highlight">Touch</span></h2>
@@ -45,10 +59,10 @@ const Contact = () => {
                 <FaEnvelope className="icon" />
                 <span>{userData.contactUs.gmail}</span>
               </div>
-              <div className="contact-item">
+              {/* <div className="contact-item">
                 <FaPhone className="icon" />
                 <span>{userData.contactUs.mobileNumber}</span>
-              </div>
+              </div> */}
               <div className="contact-item">
                 <FaMapMarkerAlt className="icon" />
                 <span>{userData.contactUs.location}</span>
@@ -61,26 +75,28 @@ const Contact = () => {
               <a href="#"><FaInstagram /></a> */}
             </div>
           </div>
-          
+
           <div className="contact-form">
             <form ref={form} onSubmit={handleSubmit}>
               <div className="form-group">
-                <input type="text" id="name" required />
+                <input type="text" id="name" name="user_name" required />
                 <label htmlFor="name">Your Name</label>
               </div>
               <div className="form-group">
-                <input type="email" id="email" required />
+                <input type="email" id="email" name="user_email" required />
                 <label htmlFor="email">Your Email</label>
               </div>
               <div className="form-group">
-                <input type="text" id="subject" required />
+                <input type="text" id="subject" name="user_subject" required />
                 <label htmlFor="subject">Subject</label>
               </div>
               <div className="form-group">
-                <textarea id="message" required></textarea>
+                <textarea id="message" name="user_message" required></textarea>
                 <label htmlFor="message">Your Message</label>
               </div>
-              <button type="submit" className="btn btn-primary">Send Message</button>
+              <button type="submit" className="btn btn-primary">
+                Send Message
+              </button>
             </form>
           </div>
         </div>

@@ -8,6 +8,7 @@ import Footer from './Footer';
 import Education from './Education'
 import './App.css';
 import Exprience from './Exprience';
+import {  Toaster } from "react-hot-toast";
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <div className="App">
+      <Toaster /> {/* Toast container */}
       <Navbar theme={theme} toggleTheme={() => setTheme(prev => prev === 'light' ? 'dark' : 'light')} />
       <Hero />
       <About />

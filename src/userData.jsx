@@ -61,6 +61,9 @@ export const userData = {
         linkedIn: "https://www.linkedin.com/in/piyush-garg-35066919a/",
         // instragram: "",
         // twiter: ""
+        YOUR_SERVICE_ID:"service_pgpl5mj",
+        YOUR_TEMPLATE_ID:"template_iihmdm3",
+        YOUR_PUBLIC_KEY:"ONR9_3Ry6HddUc5tM"
     },
     footerMessage: ""
 }
