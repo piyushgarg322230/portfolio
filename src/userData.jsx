@@ -54,13 +54,13 @@ export const userData = {
         }
     ],
     contactUs: {
-        gmail: "",
-        mobileNumber: "",
-        location: "",
-        github: "",
-        linkedIn: "",
-        instragram: "",
-        twiter: ""
+        gmail: "piyushgarg322230@gmail.com",
+        mobileNumber: "+91 9079900239",
+        location: "Jaipur, Rajasthan",
+        github: "https://github.com/piyushgarg322230",
+        linkedIn: "https://www.linkedin.com/in/piyush-garg-35066919a/",
+        // instragram: "",
+        // twiter: ""
     },
     footerMessage: ""
 }
