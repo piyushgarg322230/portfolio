@@ -46,6 +46,46 @@ export const userData = {
             image: 'https://i.ibb.co/mVRTmrgm/rummy.png',
             githubLink:"https://github.com/piyushgarg322230/Rummy_Game?tab=readme-ov-file",
             liveLink:"https://rummy-master.netlify.app/"
+        },
+        {
+            title: 'Chess Multiplayer',
+            description: 'Multiplayer Chess is a web-based game built with HTML5, JavaScript, and CSS, using Photon Server for real-time matchmaking, delivering smooth, interactive online chess gameplay across devices.',
+            tech: ['HTML5', 'JavaScript', 'Css', 'Photon Server'],
+            image: 'https://i.ibb.co/gb92QJ7y/chess.png',
+            githubLink:"https://github.com/piyushgarg322230/Chess_Multiplayer.git",
+            liveLink:"https://piyushgarg322230.github.io/Chess_Multiplayer/"
+        },
+        {
+            title: 'Snake Ladder Game',
+            description: 'Snake Ladder Game is a browser-based board game built with HTML5, CSS, and JavaScript, featuring real-time multiplayer support via Photon Server for a smooth and interactive gaming experience.',
+            tech: ['HTML5', 'JavaScript', 'Css', 'Photon Server'],
+            image: 'https://i.ibb.co/tP1Fw27c/snakess.png',
+            githubLink:"https://github.com/piyushgarg322230/Snake-Ladder-Game.git",
+            liveLink:"https://piyushgarg322230.github.io/Snake-Ladder-Game/"
+        },
+        {
+            title: 'Task Flow',
+            description: 'Task Flow is a task management web application built with React.js, Node.js, Firebase, and Tailwind CSS, offering real-time project tracking, task organization, and a clean, responsive interface for improved productivity.',
+            tech: ['ReactJs', 'NodeJs', 'Firebase', 'JavaScript', "Tailwind Css"],
+            image: 'https://i.ibb.co/QzLPvSx/taskFlow.png',
+            githubLink:"https://github.com/piyushgarg322230/TaskFlow.git",
+            liveLink:"https://todo-authentication-3f47d.web.app/"
+        },
+        {
+            title: 'Find It! Hidden Cats',
+            description: 'Find It! Hidden Cats is a 2D hidden-object puzzle game developed in Cocos Creator using TypeScript and integrated with Firebase. Built at Assert InfoTech, I implemented Google Ads, Google Analytics, in-app purchases, and core game board logic, ensuring engaging gameplay and effective monetization.',
+            tech: ['Cocos Creator 2D', 'TypeScript', 'Android Studio', 'Java', "Firebase"],
+            image: 'https://i.ibb.co/rRbPZbj7/unnamed.webp',
+            githubLink:null,
+            liveLink:"https://play.google.com/store/apps/details?id=com.creativebeans.findithiddencats&hl=en"
+        },
+        {
+            title: 'Poker Date',
+            description: 'Poker Date is a multiplayer poker game developed in Cocos2d-x using C++ with Firebase integration, built at Assert InfoTech. I implemented Google Ads, Google Analytics, in-app purchases, and the core game board logic, along with real-time chat and voice communication using Agora. Additionally, I contributed to bug fixing and performance optimization to ensure a smooth and engaging gameplay experience.',
+            tech: ['Cocos2dx', 'C++', 'Android Studio', 'Java', "Firebase"],
+            image: 'https://i.ibb.co/JWzFVVCh/poker.webp',
+            githubLink:null,
+            liveLink:"https://www.pokerdate.net/"
         }
     ],
     contactUs: {

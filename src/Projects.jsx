@@ -57,7 +57,7 @@ const Projects = () => {
                 <img src={project.image} alt={project.title} />
                 <div className="project-overlay">
 
-                  {project.githubLink && (
+                  {project.liveLink && (
                     <a href={project.liveLink} className="project-link" target="_blank" rel="noopener noreferrer">
                       <FaExternalLinkAlt />
                     </a>
