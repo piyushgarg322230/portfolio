@@ -14,7 +14,7 @@ const Hero = () => {
           <p className="hero-description">{userData.Home.description}</p>
           <div className="hero-buttons">
             <a href="#projects" className="btn btn-primary">View My Work</a>
-            <a href="#contact" className="btn btn-secondary">Download My Resume</a>
+            <a href={userData.Home.resume} className="btn btn-secondary">Download My Resume</a>
           </div>
         </div>
         {/* <div className="hero-image">

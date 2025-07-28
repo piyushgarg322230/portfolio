@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaArrowUp } from 'react-icons/fa';
+import { userData } from './userData';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -12,7 +13,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
-        <p>&copy; {new Date().getFullYear()} My Portfolio. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} {userData.footerMessage}</p>
         <button className="back-to-top" onClick={scrollToTop}>
           <FaArrowUp />
         </button>

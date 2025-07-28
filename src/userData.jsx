@@ -4,14 +4,15 @@ export const userData = {
     Home: {
         user: "Piyush Garg",
         title: "Software Developer",
-        description: "Creating Responsive Websites and Mobile games that look Great and Perform Smoothly.",
-        profileImage: "./image.jpg"
+        description: "Full-stack developer specialized in Unity multiplayer games, React, Node.js, and performance-focused Android game development.",
+        profileImage: "./image.jpg",
+        resume:"https://drive.google.com/file/d/10t8FkeWrMrjjjTwoajmj9lOi-yPW3BOE/view?usp=sharing"
     },
     About: {
         title: "About Me",
-        description: "I’m a dedicated Software Developer with over 2 years of experience, specializing in Unity for interactive application development and Node.js for building robust, real-time backend systems. I’ve worked on a variety of interactive and multiplayer applications, including poker, ludo, chess, helix jump, and snakes and ladders, using both Unity and Cocos. My expertise with SmartFox2X allows me to deliver seamless real-time communication and synchronization. I focus on writing clean, efficient code and creating smooth, high-performance user experiences across platforms...",
+        description: "Full Stack Developer with 2 years of experience in Unity 2D/3D game development and modern web applications. Skilled in creating real-time multiplayer Android games using SmartFox and Agora voice integration, ensuring smooth gameplay and engaging user experiences. Proficient in React.js for dynamic, responsive interfaces and Node.js for scalable backend systems. Experienced in end-to-end development, from concept design and gameplay mechanics to backend infrastructure and UI enhancements, delivering high-quality, interactive applications and games across platforms.",
         mySkill: "My Skills",
-        skills: ["C++", "TypeScript", "JavaScript", "Mongodb", "SQL", "Node.Js", "Unity", "Cocos Creator", "Android Studio", "Rect.Js", "Express.Js", "GitHub", "Cocos2dx"],
+        skills: ["C++", "TypeScript", "JavaScript","HTML5", "Mongodb", "SQL", "Node.Js", "Unity 2D/3D,", "Cocos Creator", "Android Studio", "Rect.Js", "Express.Js", "GitHub", "Cocos2dx"],
     },
     Education: [
         {
@@ -39,18 +40,12 @@ export const userData = {
     ],
     Project: [
         {
-            title: "Helix Jump",
-            intro: "",
-            usingTecnolgy: "",
-            live: "",
-            github: ""
-        },
-        {
-            title: "Helix Jump",
-            intro: "",
-            usingTecnolgy: "",
-            live: "",
-            github: ""
+            title: 'Rummy Master',
+            description: 'Rummy Master is a 2D single-player card game built in Unity with C#, featuring classic Rummy gameplay, smooth animations, and an intuitive interface for a fun experience.',
+            tech: ['Unity2D', 'C#'],
+            image: 'https://i.ibb.co/mVRTmrgm/rummy.png',
+            githubLink:"https://github.com/piyushgarg322230/Rummy_Game?tab=readme-ov-file",
+            liveLink:"https://rummy-master.netlify.app/"
         }
     ],
     contactUs: {
@@ -61,9 +56,23 @@ export const userData = {
         linkedIn: "https://www.linkedin.com/in/piyush-garg-35066919a/",
         // instragram: "",
         // twiter: ""
-        YOUR_SERVICE_ID:"service_pgpl5mj",
-        YOUR_TEMPLATE_ID:"template_iihmdm3",
-        YOUR_PUBLIC_KEY:"ONR9_3Ry6HddUc5tM"
+        YOUR_SERVICE_ID: "service_pgpl5mj",
+        YOUR_TEMPLATE_ID: "template_iihmdm3",
+        YOUR_PUBLIC_KEY: "ONR9_3Ry6HddUc5tM"
     },
-    footerMessage: ""
+    experienceData: [
+        {
+            id: 1,
+            title: 'Software Developer',
+            company: 'Assert Infotech',
+            date: 'Nov 2022 - Present',
+            tasks: [
+                "Developed and maintained multiplayer Android games using Unity (2D/3D) and Cocos2d with SmartFox server integration, achieving smooth real-time gameplay.",
+                'Built scalable backend systems with Node.js and integrated REST APIs for seamless client-server communication.',
+                "Collaborated in an Agile environment, improving game performance and reducing bugs by 14% through refactoring and optimization."
+            ],
+            animation: 'slide-in-right'
+        }
+    ],
+    footerMessage: " My Portfolio. All rights reserved."
 }

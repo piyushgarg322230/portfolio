@@ -13,6 +13,23 @@
   --transition: all 0.3s ease;
   --border-radius: 8px;
   --accent: #4d44db;
+
+
+  /* --- Mapped Variables for the Timeline Component --- */
+  /* Page background color */
+  --bg-color: var(--dark-color);
+
+  /* Color for the vertical timeline (a neutral gray) */
+  --surface-color: var(--gray-color);
+
+  /* Main highlight color for dots and links */
+  --accent-color: var(--primary-color);
+
+  /* Color for dates and descriptions */
+  --secondary-text-color: var(--gray-color);
+
+  /* Font for dates (retained from previous) */
+  --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 }
 
 [data-theme="dark"] {
@@ -255,6 +272,22 @@ section {
     display: flex;
     align-items: center;
   }
+  #experience, #projects {
+    padding: 80px 1.5rem;
+  }
+
+  /* --- Adjust Experience Timeline for Mobile --- */
+
+  .experience-timeline {
+    /* Give content more space by reducing the padding */
+    padding-left: 20px; 
+    margin-left: 0;
+  }
+
+  .timeline-item::before {
+    /* Reposition the timeline dot to match the new padding */
+    left: -28.5px; 
+  }
 }
 
 .hero .container {
@@ -397,6 +430,7 @@ section {
   gap: 0.5rem;
   margin-bottom: 2rem;
 }
+
 .filter-btn {
   padding: 0.5rem 1.5rem;
   background-color: transparent;
@@ -408,7 +442,8 @@ section {
   transition: var(--transition);
 }
 
-.filter-btn:hover, .filter-btn.active {
+.filter-btn:hover,
+.filter-btn.active {
   background-color: var(--primary-color);
   color: white;
 }
@@ -431,21 +466,23 @@ section {
   text-align: center;
   border: none;
   font-size: 1rem;
-  text-decoration: none; /* ✅ Fix is here */
+  text-decoration: none;
+  /* ✅ Fix is here */
 }
 
 .btn-outline {
-    background-color: transparent;
-    border: 2px solid var(--accent);
-    color: var(--accent);
+  background-color: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
 }
 
 .btn-outline:hover {
-    background-color: var(--accent);
-    color: white;
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-hover);
+  background-color: var(--accent);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
 }
+
 .project-card {
   background-color: var(--white);
   border-radius: 10px;
@@ -586,7 +623,7 @@ section {
     - It will try to be 2.5% of the viewport width (vw).
     - It won't go above 1.2rem (19.2px).
   */
-  font-size: clamp(0.8rem, 2.5vw, 1.2rem); 
+  font-size: clamp(0.8rem, 2.5vw, 1.2rem);
 }
 
 .social-links {
@@ -663,10 +700,10 @@ section {
   outline: none;
 }
 
-.form-group input:focus + label,
-.form-group textarea:focus + label,
-.form-group input:not(:placeholder-shown) + label,
-.form-group textarea:not(:placeholder-shown) + label {
+.form-group input:focus+label,
+.form-group textarea:focus+label,
+.form-group input:not(:placeholder-shown)+label,
+.form-group textarea:not(:placeholder-shown)+label {
   top: -10px;
   left: 10px;
   font-size: 0.8rem;
@@ -714,9 +751,11 @@ section {
   0% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-20px);
   }
+
   100% {
     transform: translateY(0px);
   }
@@ -727,10 +766,12 @@ section {
     transform: scale(0.95);
     opacity: 0.7;
   }
+
   50% {
     transform: scale(1);
     opacity: 1;
   }
+
   100% {
     transform: scale(0.95);
     opacity: 0.7;
@@ -832,5 +873,83 @@ section {
     width: 300px;
     height: 300px;
   }
+  h2.section-title {
+    font-size: 2rem; /* Make section titles a bit smaller */
+  }
+
+  .timeline-content h3 {
+    font-size: 1.1rem; /* Adjust job title size */
+  }
+
+  .project-card h3 {
+    font-size: 1.15rem; /* Adjust project title size */
+  }
 }
 
+/* Exprience Componenet */
+#experience {
+  padding: 100px 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.experience-timeline {
+  position: relative;
+  border-left: 2px solid var(--surface-color);
+  padding-left: 30px;
+}
+
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -39px;
+  /* Adjusted for border */
+  top: 0px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  border: 2px solid var(--bg-color);
+}
+
+.timeline-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.timeline-content h3 span {
+  color: var(--accent-color);
+}
+
+.timeline-date {
+  font-family: var(--font-mono);
+  color: var(--secondary-text-color);
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.timeline-content ul {
+  list-style: none;
+  padding-left: 0;
+  /* Ensures list aligns correctly */
+}
+
+.timeline-content li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 0.5rem;
+  color: var(--secondary-text-color);
+}
+
+.timeline-content li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+}

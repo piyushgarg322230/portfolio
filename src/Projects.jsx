@@ -1,32 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-
-const projects = [
-  {
-    title: 'E-commerce Website',
-    description: 'A fully responsive e-commerce platform built with React and Node.js.',
-    tech: ['React', 'Node.js', 'MongoDB'],
-    image: 'https://picsum.photos/id/237/200/300'
-  },
-  {
-    title: 'Task Management App',
-    description: 'Productivity app with drag-and-drop functionality.',
-    tech: ['JavaScript', 'Firebase', 'CSS3'],
-    image: 'https://picsum.photos/id/237/200/300'
-  },
-  {
-    title: 'Task Management App',
-    description: 'Productivity app with drag-and-drop functionality.',
-    tech: ['JavaScript', 'Firebase', 'CSS3'],
-    image: 'https://picsum.photos/id/237/200/300'
-  },
-  {
-    title: 'Task Management App',
-    description: 'Productivity app with drag-and-drop functionality.',
-    tech: ['JavaScript', 'Firebase', 'CSS3'],
-    image: 'https://picsum.photos/id/237/200/300'
-  }
-];
+import { userData } from './userData';
 
 const Projects = () => {
   const projectRefs = useRef([]);
@@ -73,8 +47,8 @@ const Projects = () => {
 
 
         <div className="projects-grid">
-          {projects.map((project, index) => (
-            <div 
+          {userData.Project.map((project, index) => (
+            <div
               key={index}
               className="project-card"
               ref={el => projectRefs.current[index] = el}
@@ -82,8 +56,17 @@ const Projects = () => {
               <div className="project-image">
                 <img src={project.image} alt={project.title} />
                 <div className="project-overlay">
-                  <a href="#" className="project-link"><FaExternalLinkAlt /></a>
-                  <a href="#" className="project-link"><FaGithub /></a>
+
+                  {project.githubLink && (
+                    <a href={project.liveLink} className="project-link" target="_blank" rel="noopener noreferrer">
+                      <FaExternalLinkAlt />
+                    </a>
+                  )}
+                  {project.githubLink && (
+                    <a href={project.githubLink} className="project-link" target="_blank" rel="noopener noreferrer">
+                      <FaGithub />
+                    </a>
+                  )}
                 </div>
               </div>
               <div className="project-info">
@@ -99,11 +82,11 @@ const Projects = () => {
           ))}
         </div>
 
-        <div className="section-footer">
+        {/* <div className="section-footer">
           <a href="#" className="btn-outline">
           <FaGithub style={{ marginRight: "8px" }} /> View All Projects
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

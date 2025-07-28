@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <Toaster /> {/* Toast container */}
-      <Navbar theme={theme} toggleTheme={() => setTheme(prev => prev === 'light' ? 'dark' : 'light')} />
+      <Navbar theme={theme} toggleTheme={() => setTheme(prev => prev === 'light' ? 'light' : 'light')} />
       <Hero />
       <About />
       <Exprience />
