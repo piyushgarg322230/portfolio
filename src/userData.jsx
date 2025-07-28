@@ -1,5 +1,7 @@
 import { FaGraduationCap, FaSchool, FaCode, FaChartLine, FaUsers, FaLaptop, FaPercent, FaTrophy } from 'react-icons/fa';
 
+//Photo Is uploade is "https://piyush-goyal22.imgbb.com/"
+
 export const userData = {
     Home: {
         user: "Piyush Garg",
