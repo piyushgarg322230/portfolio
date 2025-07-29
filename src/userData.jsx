@@ -67,7 +67,7 @@ export const userData = {
         },
         {
             title: 'Task Flow',
-            description: 'Task Flow is a task management web application built with React.js, Node.js, Firebase, and Tailwind CSS, offering real-time project tracking, task organization, and a clean, responsive interface for improved productivity.',
+            description: 'sk Flow is an advanced task management web application built with React.js, Node.js, Firebase, and Tailwind CSS. It offers real-time project tracking, intuitive task organization, and collaborative features. With a clean, responsive interface, Task Flow enhances productivity, streamlines workflows, and provides an efficient solution for managing personal and team projects.',
             tech: ['ReactJs', 'NodeJs', 'Firebase', 'JavaScript', "Tailwind Css"],
             image: 'https://i.ibb.co/QzLPvSx/taskFlow.png',
             githubLink:"https://github.com/piyushgarg322230/TaskFlow.git",
