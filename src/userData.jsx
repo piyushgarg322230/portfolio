@@ -12,7 +12,7 @@ export const userData = {
     },
     About: {
         title: "About Me",
-        description: "Full Stack Developer with 2 years of experience in Unity 2D/3D game development and modern web applications. Skilled in creating real-time multiplayer Android games using SmartFox and Agora voice integration, ensuring smooth gameplay and engaging user experiences. Proficient in React.js for dynamic, responsive interfaces and Node.js for scalable backend systems. Experienced in end-to-end development, from concept design and gameplay mechanics to backend infrastructure and UI enhancements, delivering high-quality, interactive applications and games across platforms.",
+        description: "Full Stack Developer with 2+ years of experience in Unity (2D/3D) and Cocos game development, as well as modern web applications. Skilled in creating real-time multiplayer Android games using SmartFox and Agora voice integration, ensuring smooth gameplay and engaging user experiences. Proficient in React.js for dynamic, responsive interfaces and Node.js for scalable backend systems. Experienced in end-to-end development, from concept design and gameplay mechanics to backend infrastructure and UI enhancements, delivering high-quality, interactive applications and games across platforms.",
         mySkill: "My Skills",
         skills: ["C++", "TypeScript", "JavaScript","HTML5", "Mongodb", "SQL", "Node.Js", "Unity 2D/3D,", "Cocos Creator", "Android Studio", "Rect.Js", "Express.Js", "GitHub", "Cocos2dx"],
     },
@@ -109,8 +109,8 @@ export const userData = {
             company: 'Assert Infotech',
             date: 'Nov 2022 - Present',
             tasks: [
-                "Developed and maintained multiplayer Android games using Unity (2D/3D) and Cocos2d with SmartFox server integration, achieving smooth real-time gameplay.",
-                'Built scalable backend systems with Node.js and integrated REST APIs for seamless client-server communication.',
+                "Assert Infotech creates captivating PC, console, and mobile games, blending technical expertise and creativity for unforgettable experiences.",
+                "Developed and maintained multiplayer Android games using Unity (2D/3D) and Cocos with SmartFox server integration, achieving smooth real-time gameplay.",
                 "Collaborated in an Agile environment, improving game performance and reducing bugs by 14% through refactoring and optimization."
             ],
             animation: 'slide-in-right'
