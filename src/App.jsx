@@ -8,6 +8,7 @@ import Footer from './Footer';
 import Education from './Education'
 import './App.css';
 import Exprience from './Exprience';
+import SEO from './SEO';
 import {  Toaster } from "react-hot-toast";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
       <Education />
       <Contact />
       <Footer />
+      <SEO />
     </div>
   );
 }
